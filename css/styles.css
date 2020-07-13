@@ -1,0 +1,370 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    color: #40514e;
+    margin: 0px;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+h1{
+    color: #66BFBF;
+    font-family: 'Sacramento', cursive;
+    font-size: 5.625rem;
+    margin: 50px auto 0 auto;
+}
+
+h2{
+    color: #66BFBF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#skills h2, #contact h2{
+    padding-top: 80px;
+}
+
+h3{
+    color: #11999E;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+}
+
+p{
+    line-height: 2;
+}
+
+hr{
+    border-style: none;
+    border-top-style: dotted;
+    border-top-width: 5px;
+    border-color: #d1cebd;
+    margin: 150px auto;
+    width: 5%;
+}
+
+#hello hr{
+    margin: 20px auto;
+}
+
+
+#title{
+    background: #eaf6f6;
+}
+
+/* Nav bar */
+
+#navbar *{
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+#navbar {
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+    background-color: #eaf6f6;
+}
+
+.parallax-mirror{
+    z-index:1 !important;
+}
+
+#navbar img{
+    display: blocks;
+    width: 70px;
+    height: 70px;
+    float: left;
+    margin: 2% 9%;
+}
+
+#navbar ul{
+    font-size: 1rem;
+    float: right;
+    margin-right: 7%;
+    position: relative;
+    z-index: 10000;
+}
+
+#navbar ul li{
+    display: inline-block;
+    line-height: 50px;
+    margin: 40px 10px 4px;
+}
+
+#navbar ul li a{
+    color: #11999E;
+    font-family: "Montserrat";
+    font-size: 1rem;
+}
+
+#navbar ul li a.active, #navbar ul li a:hover{
+    color: #115b5e;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color:#66BFBF;
+    float: right;
+    line-height: 80px;
+    margin-right: 5%;
+    margin-top: 20px;
+    cursor: pointer;
+    display: none;
+    position: relative;
+    z-index: 11;
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width: 952px){
+    #navbar img{
+        margin-top: 3%;
+        margin-left: 3%;
+    }
+    #navbar ul li a{
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 750px){
+    .checkbtn{
+        display: block;
+    }
+    #navbar ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #eaf6f6;
+        top: 100px;
+        right: -200%;
+        text-align: center;
+        transition: all .5s;
+    }
+    #navbar ul li{
+        display: block;
+    }
+
+    #navbar ul li a{
+        font-size: 1.5rem;
+    }
+
+    #navbar ul li a.active, #navbar ul li a:hover{
+        color: #115b5e;
+    }
+
+    #check:checked ~ ul{
+        right: -7%;
+    }
+}
+
+/* Introduction */
+
+.flower{
+    width: 500px;
+    height: 40vh;
+    padding-top: 80px;
+}
+
+.top-container{
+    position: relative;
+    padding-top: 230px;
+}
+
+.top-cloud{
+    position: absolute;
+    right: 20%;
+    top: 140px;
+    width: 120px;
+    height: 120px;
+}
+
+.bottom-cloud{
+    position: absolute;
+    left: 20%;
+    bottom:210px;
+    width: 100px;
+    height: 70px;
+}
+
+
+/* About Me */
+
+.middle-container{
+    padding: 120px 0px;
+}
+
+.my-photo{
+    width: 200px;
+    height: 200px;
+}
+
+.intro{
+    width: 40%;
+    margin: auto;
+}
+
+#hello h2{
+    margin-top: 15px;
+}
+
+@media (max-width: 751px){
+    .intro{
+        width: 90%;
+    }
+}
+
+/* Skills */
+.skill{
+    padding-top: 50px;
+}
+
+.skill-row{
+    width: 60%;
+    margin: 80px auto 80px auto;
+    text-align: left;
+    line-height: 2;
+}
+
+.web-icon{
+    width: 150px;
+    float: left;
+    margin-right: 30px;
+}
+
+.data-icon{
+    width: 150px;
+    float: right;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
+.camera-icon{
+    width: 120px;
+    float: left;
+    margin-right: 30px;
+}
+
+@media (max-width: 1000px){
+    .skill-row{
+        width: 80%;
+    }
+}
+
+@media (max-width: 751px){
+    .skill-row{
+        width: 90%;
+        text-align: center;
+    }
+    .web-icon{
+        width: 150px;
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .data-icon{
+        width: 150px;
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .camera-icon{
+        width: 120px;
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+/* Contact Me */
+
+.bottom-container{
+    background-color: #66BFBF;
+    padding: 50px;
+    padding-bottom: 20px;
+    margin: 50px auto 0 auto;
+}
+
+
+.contact-message{
+    width: 60%;
+    margin: 40px auto 40px auto;
+}
+
+@media (max-width: 1000px){
+    .contact-message{
+        width: 80%;
+    }
+}
+
+.btn {
+    background: #24b1b6;
+    border: solid #11999E 1px;
+    /* background-image: -webkit-linear-gradient(top, #11999E, #1ED0AC);
+    background-image: -moz-linear-gradient(top, #11999E, #1ED0AC);
+    background-image: -ms-linear-gradient(top, #11999E, #1ED0AC);
+    background-image: -o-linear-gradient(top, #11999E, #1ED0AC);
+    background-image: linear-gradient(to bottom, #11999E, #1ED0AC); */
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #1a6063;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 19px;
+    font-weight: 100;
+    padding: 5px 15px;
+    margin: 25px auto 0px auto;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    word-spacing: 0px;
+}
+    
+.btn:hover {
+    border: solid #669CB3 1px;
+    background: #60C2E1;
+    /* background-image: -webkit-linear-gradient(top, #60C2E1, #0C7B93);
+    background-image: -moz-linear-gradient(top, #60C2E1, #0C7B93);
+    background-image: -ms-linear-gradient(top, #60C2E1, #0C7B93);
+    background-image: -o-linear-gradient(top, #60C2E1, #0C7B93);
+    background-image: linear-gradient(to bottom, #60C2E1, #0C7B93); */
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+@media (max-width: 750px){
+    .btn{
+        padding: 5px 30%;
+    }
+}
+
+
+/* Footer */
+.bottom-container a{
+    color: #11999E;
+    font-weight: 900;
+    margin: 10px 20px;
+    text-decoration: none;
+    word-spacing: 20px;
+    width: 15%;
+}
+
+.bottom-container a:hover{
+    color:#eaf6f6;
+}
+
+.footer-copyright{
+    color: #eaf6f6;
+    font-size: 0.75rem;
+    padding: 20px 0px;
+}
