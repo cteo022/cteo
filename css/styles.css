@@ -233,9 +233,10 @@ hr{
 }
 
 .web-icon{
-    width: 150px;
+    width: 120px;
     float: left;
     margin-right: 30px;
+    margin-top: 40px;
 }
 
 .data-icon{
